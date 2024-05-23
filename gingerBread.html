@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tree</title>
+        <style>
+            .head {
+                fill: rgb(241, 204, 38);
+            }
+            .limb {
+                stroke: rgb(241, 204, 38);
+                stroke-width: 45px;
+                stroke-linecap: round;
+            }
+            .eye {
+                fill: black;
+                animation: ani 4s linear infinite;
+            }
+            .mouth {
+                fill: none;
+                stroke: white;
+                stroke-width: 3px;
+            }
+            svg {
+                border: 1px solid black;
+            }
+            @keyframes ani {
+                40%,
+                50%,
+                60% {
+                    opacity: 0;
+                }
+                39%,
+                45%,
+                55%,
+                65% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <!-- x="392" -->
+    <body>
+        <svg
+            width="163"
+            height="213"
+            viewBox="-25 0 215 220"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <line class="limb" y1="110.5" x2="163" y2="110.5" />
+            <line
+                class="limb"
+                x1="19.7544"
+                y1="211.853"
+                x2="80.3877"
+                y2="110.633"
+            />
+            <line
+                class="limb"
+                x1="140.57"
+                y1="212.255"
+                x2="80.5701"
+                y2="111.255"
+            />
+            <circle class="head" cx="81.5" cy="45.5" r="47.5" />
+            <ellipse class="eye" cx="63" cy="34.5" rx="5.5" ry="7.5" />
+            <ellipse class="eye" cx="99" cy="34.5" rx="5.5" ry="7.5" />
+            <rect class="mouth" x="67" y="58" width="29" height="10" rx="4" />
+            <circle cx="81" cy="141" r="8" fill="black" />
+            <circle cx="81" cy="111" r="8" fill="black" />
+        </svg>
+    </body>
+</html>
+
